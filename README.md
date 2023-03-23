@@ -1,1 +1,1 @@
-# DID-to-DNS-TR-and-DNSSEC
+TrustyDID
