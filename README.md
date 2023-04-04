@@ -10,3 +10,16 @@ To execute the demo script please run `python3 did_tlsa_verifier_demo.py` and pa
 
 You may need to install some less common python packages to run the demo:
 `pip3 install cryptography py-multibase base58 jwcrypto dnspython`
+
+DIG commands for the DNS records:
+To query the **DID URI** record from the command line: 
+`dig _did.tr-demo.ciralabs.ca URI +dnssec +multi`
+
+To query the **DID TLSA** records from the command line:
+`dig _did.tr-demo.ciralabs.ca TLSA +dnssec +multi`
+
+To query the **Trust Registry URI** record from the command line: 
+`dig _tr.tr-demo.ciralabs.ca URI +dnssec +multi`
+
+To query the **Trust Regsitry TLSA** record from the command line: 
+`dig tr-demo.ciralabs.ca._tr.trustregistry.ca TLSA +dnssec +multi`
