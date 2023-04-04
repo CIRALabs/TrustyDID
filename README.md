@@ -1,6 +1,6 @@
 ## DNS based Trust Registry
 
-This repository contains some sample code and documents exploring a Trust Registry implementation rooted in the DNS. It uses a live DID (see `did.txt`) and 2 DNS zones, `tr-demo.ciralabs.ca` and `trustregistry.ca`, as the basis for what such an implementation may look and function like.
+This repository contains some sample code and documents exploring a Trust Registry implementation grounded in the DNS. It uses a live DID (see `did.txt`) and 2 DNS zones, `tr-demo.ciralabs.ca` and `trustregistry.ca`, as the basis for what such an implementation may look and function like.
 
 Please checkout the .ppt for a more detailed walkthrough of the DNS based Trust Registry implementation. It was originally presented by Jacques Latour at ICANN76.
 
