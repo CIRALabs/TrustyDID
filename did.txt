@@ -1,0 +1,48 @@
+DID: did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM
+
+DID Document: {
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2018/v1",
+    "https://w3id.org/security/suites/x25519-2019/v1"
+  ],
+  "id": "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM",
+  "verificationMethod": [
+    {
+      "type": "Ed25519VerificationKey2018",
+      "id": "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM#key-1",
+      "controller": "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM",
+      "publicKeyBase58": "HdXo5kegxgPze3tAw6QYU7vvJg4gbxztqSidt8LsB6eS"
+    },
+    {
+      "type": "X25519KeyAgreementKey2019",
+      "id": "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM#key-agreement-1",
+      "controller": "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM",
+      "publicKeyBase58": "3shqJTQvoTa7JwhRGGEjwyKhcC2xaVTiyRt2pznp7XsR"
+    }
+  ],
+  "authentication": [
+    "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM#key-1"
+  ],
+  "assertionMethod": [
+    "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM#key-1"
+  ],
+  "keyAgreement": [
+    "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM#key-agreement-1"
+  ]
+}
+
+DNS Records:
+- To query the DID URI record from the command line: "dig _did.tr-demo.ciralabs.ca URI +dnssec"
+    - _did.tr-demo.ciralabs.ca IN URI 100 10 "did:sov:danube:XWfvq6uyAjBUbg4hBBP3vM"
+
+- To query both DID TLSA records from the command line: "dig _did.tr-demo.ciralabs.ca TLSA +dnssec"
+    - _did.tr-demo.ciralabs.ca IN TLSA 3 1 1 "8A9E530067D29D399AC190006344822889385E91D70BA249C98DCD669D849460"
+    - _did.tr-demo.ciralabs.ca IN TLSA 3 1 0 "F716B82BD54ECDDB908D804CD031512EB5CB3A5454D0C1024E30B04A88251CFF"
+
+- To query the Trust Registry URI record from the command line: "dig _tr.tr-demo.ciralabs.ca URI +dnssec"
+    - _tr.tr-demo.ciralabs.ca IN URI 1 0 "trustregistry.ca"
+
+- To query the Trust Regsitry TLSA record from the command line: "dig tr-demo.ciralabs.ca._tr.trustregistry.ca TLSA +dnssec"
+    - tr-demo.ciralabs.ca._tr.trustregistry.ca IN TLSA 3 1 0 "f716b82bd54ecddb908d804cd031512eb5cb3a5454d0c1024e30b04a88251cff"
+    - tr-demo.ciralabs.ca._tr.trustregistry.ca IN TLSA 3 1 1 "8a9e530067d29d399ac190006344822889385e91d70ba249c98dcd669d84946"
