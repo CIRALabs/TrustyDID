@@ -12,6 +12,7 @@ You may need to install some less common python packages to run the demo:
 `pip3 install cryptography py-multibase base58 jwcrypto dnspython`
 
 **DIG commands for the DNS records:**
+
 To query the **DID URI** record from the command line: 
 `dig _did.tr-demo.ciralabs.ca URI +dnssec +multi`
 
